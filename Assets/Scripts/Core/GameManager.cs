@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 using KitchenChaos.PlayerInput;
+using System.Collections;
 
 namespace KitchenChaos.Core
 {
@@ -12,6 +13,7 @@ namespace KitchenChaos.Core
         public static GameManager Instance { get; private set; }
         public event Action OnStateChanged;
         public event Action OnLocalPlayerReadyChanged;
+        
 
         [SerializeField] Transform _playerPrefab;
         [SerializeField] GameInput _gameInput;
@@ -63,10 +65,13 @@ namespace KitchenChaos.Core
             foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
             {
                 player = Instantiate(_playerPrefab);
+                player.name = "Player-"+clientId;
                 player.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
-                player.gameObject.name = ""+ clientId;
+
             }
         }
+
+        
 
         void GameplayState_OnValueChanged(GameplayState previousValue, GameplayState newValue)
         {

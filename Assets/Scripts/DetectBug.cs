@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
 namespace KitchenChaos
 {
-    public class DetectBug : MonoBehaviour
+    public class DetectBug : NetworkBehaviour
     {
+        public GameObject current;
         // Start is called before the first frame update
         void Start()
         {
@@ -15,18 +17,26 @@ namespace KitchenChaos
         // Update is called once per frame
         void Update()
         {
-            GameObject current = GameObject.Find("Player(Clone)");
-            int i = 0;
-            while (current != null)
+            if (!IsServer)
             {
-                i++;
-                Debug.Log("Player(Clone)" + i);
-                current = GameObject.Find("Player(Clone)");
-                if (i == 0)
+                current = GameObject.Find("Player-0");
+                if (current != null)
                 {
-                    Destroy(current);
+                    //Destroy(current);
+                    StartCoroutine(ChangePositionStone());
+                }
+                else
+                {
+                    return;
                 }
             }
+
         }
+        IEnumerator ChangePositionStone()
+        {
+            yield return new WaitForSeconds(0.5f);
+            current.transform.position = new Vector3(0f, 0f, 12f);
+        }
+
     }
 }

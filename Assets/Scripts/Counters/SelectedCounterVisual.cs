@@ -1,28 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+using KitchenChaos.Control;
 using UnityEngine;
 
-public class SelectedCounterVisual : MonoBehaviour
+namespace KitchenChaos.Interactions.Visual
 {
-    private KitchenCounter counter;
-
-    // Start is called before the first frame update
-    void Start()
+    public class SelectedCounterVisual : MonoBehaviour
     {
-        Player.Instance.OnSelectedCounterChange += Player_CounterChange;
-        counter = GetComponentInParent<KitchenCounter>();
-    }
+        [SerializeField] BaseCounter _counter;
+        [SerializeField] GameObject _selectedCounterVisual;
 
-    private void Player_CounterChange(object sender, Player.OnSelectedCounterChangeEventArg e)
-    {
-        SetSelectedVisual(counter == e.selected);
-    }
-
-    private void SetSelectedVisual(bool active)
-    {
-        foreach (Transform child in transform)
+        void Start()
         {
-            child.gameObject.SetActive(active);
+            if (PlayerController.LocalInstance != null)
+                PlayerController.LocalInstance.OnSelectedCounterChanged += PlayerController_OnSelectedCounterChanged; 
+            else
+                PlayerController.OnAnyPlayerSpawned += PlayerController_OnAnyPlayerSpawned;
         }
+
+        private void PlayerController_OnAnyPlayerSpawned()
+        {
+            if (PlayerController.LocalInstance != null)
+            {
+                PlayerController.LocalInstance.OnSelectedCounterChanged -= PlayerController_OnSelectedCounterChanged;
+                PlayerController.LocalInstance.OnSelectedCounterChanged += PlayerController_OnSelectedCounterChanged;
+            }
+        }
+
+        void PlayerController_OnSelectedCounterChanged(BaseCounter selectedCounter)
+        {
+            DisplaySelection(selectedCounter == _counter);
+        }
+
+        void DisplaySelection(bool shouldDisplay)
+        {
+            _selectedCounterVisual.SetActive(shouldDisplay);
+        }
+
+        //void OnDestroy()
+        //{
+        //    PlayerController.LocalInstance.OnSelectedCounterChanged -= PlayerController_OnSelectedCounterChanged;
+        //}
     }
 }
