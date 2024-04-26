@@ -20,7 +20,7 @@ Default controls:
 * gamepad / joystick: move with the left analog stick, interact with A, alternative interact with X, pause with START.
 ***
 ### Playing options
-![Amazing Recipe: Sichang Story Multiplayer System](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/_Assets/46.png?raw=true)
+![Amazing Recipe: Sichang Story Multiplayer System](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/_Assets/4B.png?raw=true)
 The game is playable as a single player game, or as a multiplayer with up to 4 players. 
 Multiplayer System used Netcode SDK for GameObjects to implement multiplayer. 
 * used NetworkVariable and server/client RPCs for synching
