@@ -1,7 +1,11 @@
 # Amazing Recipe! Sichang Life
 Amazing Recipe! Sichang Life is a fast-paced, cooperative cooking game where players take on the roles of chefs in a bustling restaurant located on the beautiful Sichang Island in Thailand. Players must work together efficiently to prepare and serve delicious Thai dishes to a demanding clientele within a time limit. The game combines the chaotic fun of Overcooked with the unique charm and flavors of Thai cuisine.
+![Amazing Recipe! Sichang Life](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/ScreenShot/a1.png?raw=true)
 
 # Gameplay Mechanics
+![Gameplay Mechanics](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/ScreenShot/a5.png?raw=true)
+
+![Gameplay Mechanics](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/ScreenShot/a3.png?raw=true)
 
 Cooperative Multiplayer: Up to 4 players can team up online or locally to manage the restaurant kitchen.
 
@@ -15,6 +19,8 @@ Players can unlock new cosmetic items for their chefs and restaurant as they pro
 
 # Difficulty Levels:
 The game will offer multiple difficulty levels to cater to players of all skillsets. Higher difficulty levels will introduce more complex recipes, faster customer arrival times, and additional kitchen hazards.
+
+![Gameplay Mechanics](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/ScreenShot/a2.png?raw=true)
 
 # Netcode for Multiplayer: 
 Unity's built-in networking solution, UnityLời Networking (LLAPI), or similar solutions like Mirror or Forge Networking can be used to enable smooth online multiplayer functionality.
