@@ -1,4 +1,4 @@
-# Amazing Recipe: Sichang Story
+# Amazing Recipe: Sichang Life
 
 A simpler version of *Overcooked*, one level. Playable with keyboard and gamepad. Playable as a single player, local multiplayer (with gamepads) or over network.<br>
 ***
