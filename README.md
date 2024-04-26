@@ -31,5 +31,5 @@ Multiplayer System used Netcode SDK for GameObjects to implement multiplayer.
 * the game uses Relay for networking
 ***
 ### Code
-Main system use resources from this repo [GitHub: Kitchen Chaos by Dorole]([https://pages.github.com/](https://github.com/Dorole/KitchenChaos)).
+Main system use resources from this repo [GitHub: Kitchen Chaos by Dorole](https://github.com/Dorole/KitchenChaos).
 ***
