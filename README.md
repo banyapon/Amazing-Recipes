@@ -1,8 +1,7 @@
 # Amazing Recipe! Sichang Life
-
-![image](https://github.com/banyapon/Amazing-Recipes/assets/4135274/d5c7b0f0-8aa6-4a4f-ad76-94842ad9bcf0)
-Amazing Recipe! Sichang Life is a fast-paced, cooperative cooking game where players take on the roles of chefs in a bustling restaurant located on the beautiful Sichang Island in Thailand. Players must work together efficiently to prepare and serve delicious Thai dishes to a demanding clientele within a time limit. The game combines the chaotic fun of Overcooked with the unique charm and flavors of Thai cuisine.
 ![Amazing Recipe! Sichang Life](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/Screenshots/a1.png?raw=true)
+
+Amazing Recipe! Sichang Life is a fast-paced, cooperative cooking game where players take on the roles of chefs in a bustling restaurant located on the beautiful Sichang Island in Thailand. Players must work together efficiently to prepare and serve delicious Thai dishes to a demanding clientele within a time limit. The game combines the chaotic fun of Overcooked with the unique charm and flavors of Thai cuisine.
 
 # Gameplay Mechanics
 ![Gameplay Mechanics](https://github.com/banyapon/Amazing-Recipes/blob/main/Assets/Screenshots/a5.png?raw=true)
