@@ -15,5 +15,5 @@ MonoBehaviour:
   _kitchenObjectSOList:
   - {fileID: 11400000, guid: 9fb6b2b9b1807534292da714cf20afca, type: 2}
   - {fileID: 11400000, guid: 46b0768b5fcc6f14fb91703430db1c03, type: 2}
-  _recipeName: Basic Burger
-  _deliveryPoints: 2
+  _recipeName: Ham Burger
+  _deliveryPoints: 125
